@@ -9,7 +9,7 @@ import GithubContext from '../context/github/GithubContext'
 function User({ match }) {
   const { getUser, user, loading, getUserRepos, repos } =
     useContext(GithubContext)
-
+    
   const params = useParams()
 
   useEffect(() => {
